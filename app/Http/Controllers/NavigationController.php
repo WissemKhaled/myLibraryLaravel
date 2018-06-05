@@ -24,21 +24,7 @@ class NavigationController extends Controller
     			return abort('404');
     		}
     	} else {
-    		dd(' On est sur l\'acceuil');
+    		return view('home');
     	}
-    	return view('welcome');
-    }
-    public function testPage(Request $request)
-    {
-    	if ($request->path() != "/") {
-    		try {
-    			return view($request->path());
-    		} catch (\Exception $e) {
-    			return abort('404');
-    		}
-    	} else {
-    		dd(' On est pas bon');
-    	}
-    	return view('welcome');
     }
 }
