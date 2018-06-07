@@ -15,7 +15,7 @@
 Route::get('/book', 'BookController@display');
 Route::get('/book/new', 'BookController@insert');
 Route::post('/book/new', 'BookController@insertAction');
-Route::post('/book/delete', 'BookController@deleteAction');
+Route::get('/book/delete', 'BookController@deleteAction');
 
 Route::get('/book/update', 'BookController@update');
 Route::post('/book/update', 'BookController@updateAction');

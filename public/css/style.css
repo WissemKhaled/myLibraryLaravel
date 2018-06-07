@@ -74,7 +74,9 @@ nav > ul > li > a:hover {
 }
 
 .style-div {
-   height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
 }
 .form-container {
        height: 100%;
